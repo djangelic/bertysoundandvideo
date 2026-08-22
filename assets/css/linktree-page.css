@@ -406,15 +406,51 @@
 }
 .linktree-page-wrapper + .site-footer .site-footer__meta { font-size: 12px; }
 
-/* Bubbles: breathing room under the buttons. Specific enough to beat the
-   media-query rules above that set `.linktree-highlights .highlights` padding. */
-.linktree-page .linktree-highlights { margin-top: 18px; }
-.linktree-page .linktree-highlights .highlights { padding-top: 0; }
+/* ════ BERTY TAIL (authoritative) ════════════════════════════════════════
+   THE gap: `.linktree-page` is `min-height:100vh; display:flex; align-items:center`,
+   so the <main> fills the viewport and vertically centres short content — the
+   empty space below the bubbles is that stretch, not padding. Let it hug.
+   Also collapsing: .highlights padding-bottom 28px, .linktree-highlights
+   margin-bottom 40px/2rem, .linktree-page padding-bottom 3.5rem/6rem (was for
+   the social-icon row we removed), .site-footer margin-top 40px + padding-top 28px.
+   This file loads after style.css, so it wins. */
+.linktree-page-wrapper .linktree-page {
+  min-height: auto;
+  align-items: flex-start;
+  padding-top: 2rem;
+  padding-bottom: max(14px, env(safe-area-inset-bottom, 0px) + 6px);
+}
+.linktree-page .linktree-highlights             { margin-top: 18px; margin-bottom: 10px; }
+.linktree-page-wrapper + .site-footer           { margin-top: 0; padding-top: 16px; padding-bottom: 18px; }
+
+/* Bubbles: never wider than the buttons (340px); wrap to a centred new row. */
+.linktree-page .linktree-highlights .highlights {
+  max-width: 340px; margin: 0 auto;
+  flex-wrap: wrap; justify-content: center;
+  overflow-x: visible; border-bottom: 0;
+  gap: 10px 10px; padding: 0;
+}
+.linktree-page .linktree-highlights .highlight        { width: 60px; }
+.linktree-page .linktree-highlights .highlight__ring  { width: 54px; height: 54px; }
+.linktree-page .linktree-highlights .highlight__title { font-size: 11.5px; margin-top: 4px; line-height: 1.2; }
+
+/* Tail squeeze: last bubble -> footer text. 10+14+16 was still too airy. */
+.linktree-page .linktree-highlights   { margin-bottom: 10px; }
+.linktree-page-wrapper .linktree-page { padding-bottom: max(14px, env(safe-area-inset-bottom, 0px)); }
+.linktree-page-wrapper + .site-footer { margin-top: 0; padding-top: 16px; padding-bottom: 16px; }
+
 @media (max-width: 735px) {
-  .linktree-page .linktree-highlights { margin-top: 14px; }
-  .linktree-page .linktree-highlights .highlights { padding-top: 0; }
+  .linktree-page-wrapper .linktree-page { padding-top: 1.4rem; padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); }
+  .linktree-page .linktree-highlights   { margin-top: 14px; margin-bottom: 8px; }
+  .linktree-page .linktree-highlights .highlights { max-width: 320px; gap: 9px; padding: 0; }
+  .linktree-page .linktree-highlights .highlight  { width: 56px; }
+  .linktree-page .linktree-highlights .highlight__ring { width: 50px; height: 50px; }
+  .linktree-page-wrapper + .site-footer { padding-top: 14px; padding-bottom: 14px; }
 }
 
-/* ── BERTY BUBBLE TAIL ── keep the gap under the bubbles modest. */
-.linktree-page .linktree-highlights { margin-bottom: 28px; }
-@media (max-width: 735px) { .linktree-page .linktree-highlights { margin-bottom: 24px; } }
+/* ── THE WRAPPER CLASH ─────────────────────────────────────────────────────
+   `.linktree-page-wrapper` (/html/body/div) was still `min-height:100dvh`
+   while `.linktree-page` (/html/body/div/main) was set to hug its content.
+   The wrapper kept stretching to a full viewport, and that leftover height —
+   not padding, not margin — was the gap above the footer. Let it hug too. */
+.linktree-page-wrapper { min-height: 0; }
