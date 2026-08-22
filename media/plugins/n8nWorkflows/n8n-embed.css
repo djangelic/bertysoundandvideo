@@ -1,0 +1,12 @@
+.n8n-embed { margin: 28px auto; max-width: 100%; }
+.n8n-embed__title { font-weight: 600; margin: 0 0 8px; }
+.n8n-embed n8n-demo { display: block; min-height: 320px; border: 1px solid var(--line, #262626); border-radius: 10px; overflow: hidden; }
+.n8n-embed__actions { margin-top: 10px; }
+.n8n-embed__copy { padding: 8px 18px; border-radius: 8px; border: 1px solid var(--accent, #C8102E); background: transparent; color: var(--accent, #C8102E); font: inherit; font-weight: 600; cursor: pointer; }
+.n8n-embed__copy:hover { background: var(--accent, #C8102E); color: #fff; }
+.n8n-embed__details { margin-top: 10px; }
+.n8n-embed__details pre { max-height: 320px; overflow: auto; background: var(--card, #121212); padding: 12px; border-radius: 8px; font-size: 12px; }
+.n8n-embed__details summary { cursor: pointer; color: var(--muted, #a8a8a8); font-size: 13px; }
+.n8n-embed__actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.n8n-embed__download, .n8n-embed__zip { padding: 8px 18px; border-radius: 8px; border: 1px solid var(--line, #262626); background: transparent; color: inherit; font: inherit; font-weight: 600; cursor: pointer; }
+.n8n-embed__download:hover, .n8n-embed__zip:hover { border-color: var(--accent, #C8102E); }

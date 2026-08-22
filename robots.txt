@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://djangelic.github.io/bertysoundandvideo/sitemap.xml

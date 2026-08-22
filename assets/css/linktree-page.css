@@ -1,0 +1,420 @@
+/* === Linktree page styles ===
+ *
+ * Loaded only by page-linktree.hbs. Static styling lives here; dynamic
+ * values (text color, logo size, button background, social colors, etc.) are
+ * passed in as CSS custom properties by the inline <style> block in
+ * page-linktree.hbs and consumed below via var().
+ *
+ * Background and button-hover background still live inline because their
+ * conditional logic (color/gradient/image with light-dark color-mix variants)
+ * doesn't fit cleanly into a single custom property.
+ */
+
+/* Wrapper: full-screen overlay that scrolls inside its own bounds when content
+   exceeds the viewport. */
+.linktree-page-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    /* Default background; overridden inline when homeBackgroundType is set in admin. */
+    background: var(--bg);
+}
+
+/* Subtle dot pattern overlay tying the linktree page to Mono's .hero
+   aesthetic. Reuses Mono's var(--background-pattern) directly so the
+   dot color auto-adapts to prefers-color-scheme:
+     light → rgb(245, 245, 245) dots (faint on white bg)
+     dark  → rgb(31, 37, 46) dots (faint on dark bg)
+   Sits as a fixed-position pseudo-element so it stays in place while
+   content scrolls inside the wrapper, and so it layers on top of any
+   background type (color/gradient/image) without needing to know
+   about each. */
+/* FIX (2026-08-08): the dot pattern must NOT follow prefers-color-scheme.
+   Mono's --background-pattern flips to near-white dots (rgb 245,245,245) in
+   light mode because Mono's page background also flips to white. This page's
+   background does not — it is admin-controlled via homeBackgroundColor and is
+   effectively always dark. Inheriting the light-mode value therefore painted
+   glaring white dots over a dark page for every visitor whose OS was in light
+   mode. Pin the muted dark-mode dots regardless of scheme. */
+.linktree-page-wrapper {
+    --background-pattern:
+        radial-gradient(rgb(31, 37, 46) 1px, transparent 1px),
+        radial-gradient(rgb(31, 37, 46) 1px, rgba(31, 37, 46, 0) 1px);
+}
+
+.linktree-page-wrapper::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: var(--background-pattern);
+    background-position: 0 0, 6px 6px;
+    background-size: 12px 12px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Mono's --background-pattern uses 1px-stop radial gradients which renders
+   reliably on desktop but unpredictably on high-DPR mobile devices — the
+   1px solid-to-transparent stop anti-aliases differently across mobile
+   browsers, making the dots look enlarged or smudged. Hide the overlay
+   on small viewports rather than fight the rendering quirks. The page
+   still reads as the right look without it on phone screens. */
+@media (max-width: 768px) {
+    .linktree-page-wrapper::before {
+        display: none;
+    }
+}
+
+.linktree-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: transparent;
+    color: var(--linktree-text, var(--fg));
+    font-family: var(--font);
+    position: relative;
+    z-index: 1001;
+}
+
+/* Drop the framework page borders so the linktree overlay reads as full-bleed. */
+.linktree-page--fullwidth {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.linktree-container {
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+}
+
+.linktree-header {
+    margin-bottom: 2rem;
+    margin-top: var(--linktree-logo-top, 0);
+}
+
+.linktree-logo {
+    /* The theme's global `img { display: block }` would left-align this;
+       inline-block lets the container's text-align:center do its job. */
+    display: inline-block;
+    max-width: var(--linktree-logo-size, 120px);
+    height: auto;
+}
+
+.linktree-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--linktree-text, var(--fg));
+    text-decoration: none;
+}
+
+.linktree-profile {
+    margin-bottom: 2rem;
+}
+
+/* Header banner treatment: image displays uncropped, scales with viewport.
+   For a circular cropped avatar instead (requires a square source image),
+   change the <img> class in page-linktree.hbs to linktree-profile-img-circle. */
+.linktree-profile-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.linktree-profile-img-circle {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--line);
+}
+
+.linktree-content {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: var(--linktree-text, var(--fg));
+}
+
+.linktree-content h1,
+.linktree-content h2,
+.linktree-content h3,
+.linktree-content h4,
+.linktree-content h5,
+.linktree-content h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--linktree-text, var(--fg));
+}
+
+.linktree-content p {
+    margin-bottom: 1rem;
+    color: var(--linktree-text-soft, var(--fg));
+}
+
+.linktree-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.linktree-btn {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    background: var(--linktree-btn-bg, #1a1a1a);
+    border: 1px solid #333333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .15s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.linktree-btn.rounded {
+    border-radius: 12px;
+}
+
+.linktree-btn.square {
+    border-radius: 0;
+}
+
+/* Hover background is set inline based on homeButtonHoverType (color / gradient
+   / image). Everything else about the hover state is static and lives here. */
+.linktree-btn:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.linktree-btn i {
+    margin-right: 0.5rem;
+}
+
+.linktree-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.linktree-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Opaque dark base under the admin-tinted translucent layer, so the
+       page's dot pattern can't show through the chips. */
+    background:
+        linear-gradient(var(--linktree-social-bg, rgba(255, 255, 255, 0.1)),
+                        var(--linktree-social-bg, rgba(255, 255, 255, 0.1))),
+        #161616;
+    color: var(--linktree-social-color, #ffffff);
+    text-decoration: none;
+    transition: all .15s ease;
+    font-size: var(--linktree-social-icon-size, 1.2rem);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.linktree-social-link:hover {
+    background:
+        linear-gradient(var(--linktree-social-hover-bg, rgba(255, 255, 255, 0.2)),
+                        var(--linktree-social-hover-bg, rgba(255, 255, 255, 0.2))),
+        #161616;
+    color: var(--linktree-social-color, #ffffff);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .linktree-page-wrapper {
+        padding-top: 2rem; /* Prevent logo cutoff at top */
+    }
+
+    .linktree-page {
+        padding: 0.5rem 1rem;
+        padding-bottom: 6rem; /* Extra room at bottom for social icons */
+        padding-top: 1rem;
+    }
+
+    .linktree-header {
+        margin-top: 1rem;
+    }
+
+    .linktree-container {
+        max-width: 100%;
+    }
+
+    .linktree-btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .linktree-social-link {
+        width: 45px;
+        height: 45px;
+        font-size: var(--linktree-social-icon-size-mobile, var(--linktree-social-icon-size, 1.1rem));
+    }
+}
+/* linktree wordmark (replaces "Digital Jockey" text hero heading) */
+.linktree-wordmark { display: flex; align-items: center; justify-content: center; gap: 12px;
+  font-size: 30px; font-weight: 750; letter-spacing: -.02em; margin: 0 0 6px; color: var(--linktree-text, #fff); }
+.linktree-wordmark .dj { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
+  background: linear-gradient(135deg, #12508C, #121212 82%); color: #fff; font-size: 18px; font-weight: 800; letter-spacing: -.03em; }
+.linktree-wordmark i { color: #12508C; font-style: normal; }
+
+.linktree-wordmark .dj { background: linear-gradient(135deg, #1d1d23, #0b0b0d); border: 2px solid #12508C; color: #fff; }
+
+/* linktree wordmark + social polish (2026-08-11b) */
+.linktree-wordmark { line-height: 1; }
+.linktree-wordmark .wm { display: inline-flex; align-items: baseline; }
+.linktree-wordmark .dj { line-height: 1; padding-bottom: 1px; }
+.linktree-social-link { width: 46px; height: 46px; }
+@media (max-width: 735px) { .linktree-social-link { width: 42px; height: 42px; } }
+/* mobile: let the page actually scroll to the bottom (iOS dynamic viewport + safe area) */
+.linktree-page-wrapper { min-height: 100vh; min-height: 100dvh; }
+.linktree-page { padding-bottom: max(3.5rem, env(safe-area-inset-bottom, 0px) + 2.5rem); }
+
+/* 2026-08-11c: tighter lockup gap */
+.linktree-wordmark { gap: 8px; }
+
+/* stacked hero: F3 brandmark above the wordmark */
+.linktree-logo { display: none; }
+.linktree-wordmark--stacked { flex-direction: column; gap: 16px; }
+.linktree-brandmark { width: 148px; height: 148px; display: block; filter: drop-shadow(0 10px 30px rgba(0,0,0,.5)); }
+@media (max-width: 735px) { .linktree-brandmark { width: 124px; height: 124px; } }
+
+/* compact hero: fits 800px desktop viewport without scroll (2026-08-11e) */
+.linktree-brandmark { width: 112px; height: 112px; }
+.linktree-wordmark--stacked { gap: 10px; }
+.linktree-wordmark { font-size: 26px; margin-bottom: 2px; }
+.linktree-content p { line-height: 1.45; margin: 0 0 8px; }
+.linktree-page { padding-top: 1.2rem; }
+.linktree-highlights .highlight__ring { width: 56px; height: 56px; }
+.linktree-highlights .highlight { width: 68px; }
+.linktree-highlights .highlights { padding: 4px 0 10px; }
+.linktree-menu .linktree-btn { padding: .55rem 1.2rem; font-size: .95rem; }
+.linktree-menu { gap: 10px; }
+.linktree-social-link { width: 42px; height: 42px; }
+.linktree-social { gap: 10px; margin-top: 6px; }
+@media (max-width: 735px) { .linktree-brandmark { width: 104px; height: 104px; } }
+
+/* 2026-08-11f: collapse the empty old-logo header; tighten mobile top */
+.linktree-header { display: none; }
+@media (max-width: 735px) {
+  .linktree-page { padding-top: .5rem; }
+  .linktree-page { align-items: flex-start; }
+}
+
+/* 2026-08-11g: linktree ground = corner exit, sans tire track (2026-08-12: track removed per Angel — "black and red is clean") */
+/* (djangelic black+crimson wrapper background removed — the page background
+   now comes from homeBackgroundColor written inline by the template.) */
+.linktree-page-wrapper::before { display: none !important; }
+
+
+/* 2026-08-11k: button text sized to fill the box */
+.linktree-menu .linktree-btn { font-size: 1.08rem; padding: .68rem 1.2rem; }
+
+/* 2026-08-11L: LittleLink-proportioned buttons (linktree page only) */
+.linktree-menu { max-width: 340px; margin-left: auto; margin-right: auto; }
+.linktree-menu .linktree-btn { padding: .8rem 1rem; font-size: 1.06rem; font-weight: 700; border-radius: 10px; letter-spacing: .01em; }
+
+/* 2026-08-11m: tighter bubble row on linktree */
+.linktree-highlights .highlights { gap: 10px 8px; }
+.linktree-highlights .highlight { width: 62px; }
+
+/* 2026-08-11o: socials confined to the button column width */
+.linktree-social { max-width: 340px; margin-left: auto; margin-right: auto; flex-wrap: wrap; justify-content: center; }
+/* 2026-08-11q: desktop spacing — Angel's tuner values (2026-08-11) */
+@media (min-width: 736px) {
+  .linktree-page { padding-top: 27px; padding-bottom: 6px; }
+  .linktree-brandmark { width: 130px; height: 130px; }
+  .linktree-wordmark--stacked { gap: 12px; }
+  .linktree-wordmark { font-size: 37px; margin-bottom: 0; }
+  .linktree-content { font-size: 15.3px; margin-bottom: 16px; }
+  .linktree-content p { line-height: 1.4; margin: 0; }
+  .linktree-highlights .highlights { padding: 3px 0 19px; gap: 9px; }
+  .linktree-highlights .highlight__ring { width: 54px; height: 54px; }
+  .linktree-highlights .highlight { width: 68px; }
+  .linktree-highlights .highlight__title { font-size: 12.2px; margin-top: 5px; }
+  .linktree-highlights { margin-bottom: 0; }
+  .linktree-menu { max-width: 400px; margin-top: 3px; gap: 12px; margin-bottom: 0; }
+  .linktree-menu .linktree-btn { font-size: 20px; padding: 6px 1.2rem; }
+  .linktree-social { margin-top: 22px; gap: 7px; max-width: 400px; }
+  .linktree-social-link { width: 44px; height: 44px; font-size: 18px; }
+}
+
+/* 2026-08-12b: mobile spacing — Angel's mobile tuner values (2026-08-12, rev2: menuMT -15 pulls buttons up through the collapsed 32px bubble margin → 17px gap; socMT 17) */
+@media (max-width: 735px) {
+  .linktree-brandmark { width: 99px; height: 99px; }
+  .linktree-wordmark { font-size: 36px; }
+  .linktree-content { margin-bottom: 10px; }
+  .linktree-highlights .highlights { padding: 12px 0 0; }
+  .linktree-highlights { margin-bottom: 40px; }
+  .linktree-menu { margin-top: -10px; margin-bottom: 0; }
+  .linktree-social { margin-top: 25px; }
+}
+
+/* (djangelic crimson button overrides removed for the Berty fork.) */
+.linktree-page .linktree-menu .linktree-btn:hover {
+  border-color: var(--linktree-btn-stroke, #7da7cc);
+  box-shadow: 0 6px 22px rgba(10, 37, 64, .35);
+}
+
+/* Button shape — must outrank `.linktree-menu .linktree-btn{border-radius:10px}`. */
+.linktree-page .linktree-menu .linktree-btn.pill    { border-radius: 999px; }
+.linktree-page .linktree-menu .linktree-btn.rounded { border-radius: 12px; }
+.linktree-page .linktree-menu .linktree-btn.square  { border-radius: 2px; }
+
+/* ── BERTY LINKTREE OVERRIDES ──────────────────────────────────────────── */
+/* Button type: match the approved design (was 1.06rem/700 from the djangelic pass). */
+.linktree-page .linktree-menu .linktree-btn {
+  font-size: .95rem; font-weight: 600; letter-spacing: 0; padding: .8rem 1.2rem;
+}
+/* WhatsApp button: green outline + pulsing ring, same as the design. */
+.linktree-page .linktree-menu .linktree-btn.wa { border-color: #25D366 !important; color: #25D366; }
+.linktree-page .linktree-menu .linktree-btn.wa:hover { background: rgba(37,211,102,.14) !important; border-color: #25D366 !important; }
+.linktree-page .linktree-menu .linktree-btn.wa { animation: wa-pulse 2.6s ease-out infinite; }
+@keyframes wa-pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,.45); } 55% { box-shadow: 0 0 0 9px rgba(37,211,102,0); } }
+@media (prefers-reduced-motion: reduce) { .linktree-page .linktree-menu .linktree-btn.wa { animation: none; } }
+/* Footer sits under the linktree, on the page background. */
+.linktree-page-wrapper + .site-footer { background: #0c1c2e; border-top: 1px solid rgba(255,255,255,.08); }
+
+/* ── BERTY FOOTER SEAT ─────────────────────────────────────────────────── */
+/* `.site-footer{margin-top:40px}` exposed the body background as a black bar
+   between the navy linktree and the footer. Seat it flush instead. */
+.linktree-page-wrapper + .site-footer {
+  margin-top: 0;
+  background: #081522;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 18px 0;
+}
+.linktree-page-wrapper + .site-footer .site-footer__meta { font-size: 12px; }
+
+/* Bubbles: breathing room under the buttons. Specific enough to beat the
+   media-query rules above that set `.linktree-highlights .highlights` padding. */
+.linktree-page .linktree-highlights { margin-top: 18px; }
+.linktree-page .linktree-highlights .highlights { padding-top: 0; }
+@media (max-width: 735px) {
+  .linktree-page .linktree-highlights { margin-top: 14px; }
+  .linktree-page .linktree-highlights .highlights { padding-top: 0; }
+}
+
+/* ── BERTY BUBBLE TAIL ── keep the gap under the bubbles modest. */
+.linktree-page .linktree-highlights { margin-bottom: 28px; }
+@media (max-width: 735px) { .linktree-page .linktree-highlights { margin-bottom: 24px; } }
