@@ -2,20 +2,20 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Berty Sound &amp; Video",
     "description": "",
-    "home_page_url": "https://djangelic.github.io/bertysoundandvideo",
-    "feed_url": "https://djangelic.github.io/bertysoundandvideo/feed.json",
+    "home_page_url": "https://bertysoundandvideo.com",
+    "feed_url": "https://bertysoundandvideo.com/feed.json",
     "user_comment": "",
     "author": {
         "name": "Berty Rodríguez"
     },
     "items": [
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/in-the-control-room.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/in-the-control-room.html",
+            "id": "https://bertysoundandvideo.com/in-the-control-room.html",
+            "url": "https://bertysoundandvideo.com/in-the-control-room.html",
             "title": "In the Control Room",
             "summary": "ca. July 2026 In the control room, ready to go on air.",
             "content_html": "<p><em>ca. July 2026</em></p><p>In the control room, ready to go on air.</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/5/b005.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/5/b005.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -25,12 +25,12 @@
             "date_modified": "2026-07-16T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/running-sound.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/running-sound.html",
+            "id": "https://bertysoundandvideo.com/running-sound.html",
+            "url": "https://bertysoundandvideo.com/running-sound.html",
             "title": "Running Sound",
             "summary": "ca. July 2026 “Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”",
             "content_html": "<p><em>ca. July 2026</em></p><p>“Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/11/b011.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/11/b011.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -40,12 +40,12 @@
             "date_modified": "2026-07-07T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/festival-casals.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/festival-casals.html",
+            "id": "https://bertysoundandvideo.com/festival-casals.html",
+            "url": "https://bertysoundandvideo.com/festival-casals.html",
             "title": "Festival Casals",
             "summary": "ca. June 2026 “The Puerto Rico TV team at Festival Casals. Mission accomplished!”",
             "content_html": "<p><em>ca. June 2026</em></p><p>“The Puerto Rico TV team at Festival Casals. Mission accomplished!”</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/29/b029.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/29/b029.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -55,12 +55,12 @@
             "date_modified": "2026-06-24T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/salsa-festival.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/salsa-festival.html",
+            "id": "https://bertysoundandvideo.com/salsa-festival.html",
+            "url": "https://bertysoundandvideo.com/salsa-festival.html",
             "title": "Salsa Festival",
             "summary": "June 7, 2026 “Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”",
             "content_html": "<p><em>June 7, 2026</em></p><p>“Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/23/b023.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/23/b023.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -70,12 +70,12 @@
             "date_modified": "2026-06-07T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/in-the-mix.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/in-the-mix.html",
+            "id": "https://bertysoundandvideo.com/in-the-mix.html",
+            "url": "https://bertysoundandvideo.com/in-the-mix.html",
             "title": "In the Mix",
             "summary": "ca. June 2026 The console in full swing.",
             "content_html": "<p><em>ca. June 2026</em></p><p>The console in full swing.</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/2/b002.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/2/b002.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -85,12 +85,12 @@
             "date_modified": "2026-06-05T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/berty-sound-in-action.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/berty-sound-in-action.html",
+            "id": "https://bertysoundandvideo.com/berty-sound-in-action.html",
+            "url": "https://bertysoundandvideo.com/berty-sound-in-action.html",
             "title": "Berty Sound in Action",
             "summary": "ca. May 2026 “An honor to share the room again with Berty Rodríguez — Berty Sound in action!”",
             "content_html": "<p><em>ca. May 2026</em></p><p>“An honor to share the room again with Berty Rodríguez — Berty Sound in action!”</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/1/b001.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/1/b001.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -100,12 +100,12 @@
             "date_modified": "2026-05-03T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/arena-special.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/arena-special.html",
+            "id": "https://bertysoundandvideo.com/arena-special.html",
+            "url": "https://bertysoundandvideo.com/arena-special.html",
             "title": "Arena Special",
             "summary": "ca. October 2025 Mission accomplished at the arena.",
             "content_html": "<p><em>ca. October 2025</em></p><p>Mission accomplished at the arena.</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/6/b006.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/6/b006.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -115,12 +115,12 @@
             "date_modified": "2025-10-25T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/dad.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/dad.html",
+            "id": "https://bertysoundandvideo.com/dad.html",
+            "url": "https://bertysoundandvideo.com/dad.html",
             "title": "Dad",
             "summary": "ca. June 2025 Dad.",
             "content_html": "<p><em>ca. June 2025</em></p><p>Dad.</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/34/b034.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/34/b034.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -130,12 +130,12 @@
             "date_modified": "2025-06-06T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/todays-office.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/todays-office.html",
+            "id": "https://bertysoundandvideo.com/todays-office.html",
+            "url": "https://bertysoundandvideo.com/todays-office.html",
             "title": "Today&#x27;s Office",
             "summary": "ca. March 2025 Today’s office.",
             "content_html": "<p><em>ca. March 2025</em></p><p>Today’s office.</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/18/b018.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/18/b018.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },
@@ -145,12 +145,12 @@
             "date_modified": "2025-03-15T12:00:00-07:00"
         },
         {
-            "id": "https://djangelic.github.io/bertysoundandvideo/the-wedding.html",
-            "url": "https://djangelic.github.io/bertysoundandvideo/the-wedding.html",
+            "id": "https://bertysoundandvideo.com/the-wedding.html",
+            "url": "https://bertysoundandvideo.com/the-wedding.html",
             "title": "The Wedding",
             "summary": "ca. February 2025 The wedding — the eighties.",
             "content_html": "<p><em>ca. February 2025</em></p><p>The wedding — the eighties.</p>",
-            "image": "https://djangelic.github.io/bertysoundandvideo/media/posts/32/b032.jpg",
+            "image": "https://bertysoundandvideo.com/media/posts/32/b032.jpg",
             "author": {
                 "name": "Berty Rodríguez"
             },

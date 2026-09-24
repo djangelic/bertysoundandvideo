@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Berty Sound &amp; Video</title>
-    <link href="https://djangelic.github.io/bertysoundandvideo/feed.xml" rel="self" />
-    <link href="https://djangelic.github.io/bertysoundandvideo" />
+    <link href="https://bertysoundandvideo.com/feed.xml" rel="self" />
+    <link href="https://bertysoundandvideo.com" />
     <updated>2026-07-16T12:00:00-07:00</updated>
     <author>
         <name>Berty Rodríguez</name>
     </author>
-    <id>https://djangelic.github.io/bertysoundandvideo</id>
+    <id>https://bertysoundandvideo.com</id>
 
     <entry>
         <title>In the Control Room</title>
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/in-the-control-room.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/in-the-control-room.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/5/b005.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/in-the-control-room.html"/>
+        <id>https://bertysoundandvideo.com/in-the-control-room.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/5/b005.jpg" medium="image" />
 
         <updated>2026-07-16T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/5/b005.jpg" alt="In the control room, ready to go on air." />
+                        <img src="https://bertysoundandvideo.com/media/posts/5/b005.jpg" alt="In the control room, ready to go on air." />
                     ca. July 2026 In the control room, ready to go on air.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/5/b005.jpg" class="type:primaryImage" alt="In the control room, ready to go on air." /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/5/b005.jpg" class="type:primaryImage" alt="In the control room, ready to go on air." /></p>
                 <p><em>ca. July 2026</em></p><p>In the control room, ready to go on air.</p>
             ]]>
         </content>
@@ -37,20 +37,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/running-sound.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/running-sound.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/11/b011.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/running-sound.html"/>
+        <id>https://bertysoundandvideo.com/running-sound.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/11/b011.jpg" medium="image" />
 
         <updated>2026-07-07T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/11/b011.jpg" alt="“Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”" />
+                        <img src="https://bertysoundandvideo.com/media/posts/11/b011.jpg" alt="“Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”" />
                     ca. July 2026 “Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/11/b011.jpg" class="type:primaryImage" alt="“Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”" /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/11/b011.jpg" class="type:primaryImage" alt="“Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”" /></p>
                 <p><em>ca. July 2026</em></p><p>“Running sound here with Berty Rodríguez and Manny Vázquez Pérez.”</p>
             ]]>
         </content>
@@ -60,20 +60,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/festival-casals.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/festival-casals.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/29/b029.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/festival-casals.html"/>
+        <id>https://bertysoundandvideo.com/festival-casals.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/29/b029.jpg" medium="image" />
 
         <updated>2026-06-24T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/29/b029.jpg" alt="“The Puerto Rico TV team at Festival Casals. Mission accomplished!”" />
+                        <img src="https://bertysoundandvideo.com/media/posts/29/b029.jpg" alt="“The Puerto Rico TV team at Festival Casals. Mission accomplished!”" />
                     ca. June 2026 “The Puerto Rico TV team at Festival Casals. Mission accomplished!”
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/29/b029.jpg" class="type:primaryImage" alt="“The Puerto Rico TV team at Festival Casals. Mission accomplished!”" /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/29/b029.jpg" class="type:primaryImage" alt="“The Puerto Rico TV team at Festival Casals. Mission accomplished!”" /></p>
                 <p><em>ca. June 2026</em></p><p>“The Puerto Rico TV team at Festival Casals. Mission accomplished!”</p>
             ]]>
         </content>
@@ -83,20 +83,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/salsa-festival.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/salsa-festival.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/23/b023.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/salsa-festival.html"/>
+        <id>https://bertysoundandvideo.com/salsa-festival.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/23/b023.jpg" medium="image" />
 
         <updated>2026-06-07T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/23/b023.jpg" alt="“Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”" />
+                        <img src="https://bertysoundandvideo.com/media/posts/23/b023.jpg" alt="“Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”" />
                     June 7, 2026 “Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/23/b023.jpg" class="type:primaryImage" alt="“Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”" /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/23/b023.jpg" class="type:primaryImage" alt="“Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”" /></p>
                 <p><em>June 7, 2026</em></p><p>“Our office this weekend — the Hiram Bithorn, PR Salsa Festival 2026.”</p>
             ]]>
         </content>
@@ -106,20 +106,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/in-the-mix.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/in-the-mix.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/2/b002.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/in-the-mix.html"/>
+        <id>https://bertysoundandvideo.com/in-the-mix.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/2/b002.jpg" medium="image" />
 
         <updated>2026-06-05T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/2/b002.jpg" alt="The console in full swing." />
+                        <img src="https://bertysoundandvideo.com/media/posts/2/b002.jpg" alt="The console in full swing." />
                     ca. June 2026 The console in full swing.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/2/b002.jpg" class="type:primaryImage" alt="The console in full swing." /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/2/b002.jpg" class="type:primaryImage" alt="The console in full swing." /></p>
                 <p><em>ca. June 2026</em></p><p>The console in full swing.</p>
             ]]>
         </content>
@@ -129,20 +129,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/berty-sound-in-action.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/berty-sound-in-action.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/1/b001.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/berty-sound-in-action.html"/>
+        <id>https://bertysoundandvideo.com/berty-sound-in-action.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/1/b001.jpg" medium="image" />
 
         <updated>2026-05-03T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/1/b001.jpg" alt="“An honor to share the room again with Berty Rodríguez — Berty Sound in action!”" />
+                        <img src="https://bertysoundandvideo.com/media/posts/1/b001.jpg" alt="“An honor to share the room again with Berty Rodríguez — Berty Sound in action!”" />
                     ca. May 2026 “An honor to share the room again with Berty Rodríguez — Berty Sound in action!”
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/1/b001.jpg" class="type:primaryImage" alt="“An honor to share the room again with Berty Rodríguez — Berty Sound in action!”" /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/1/b001.jpg" class="type:primaryImage" alt="“An honor to share the room again with Berty Rodríguez — Berty Sound in action!”" /></p>
                 <p><em>ca. May 2026</em></p><p>“An honor to share the room again with Berty Rodríguez — Berty Sound in action!”</p>
             ]]>
         </content>
@@ -152,20 +152,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/arena-special.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/arena-special.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/6/b006.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/arena-special.html"/>
+        <id>https://bertysoundandvideo.com/arena-special.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/6/b006.jpg" medium="image" />
 
         <updated>2025-10-25T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/6/b006.jpg" alt="Mission accomplished at the arena." />
+                        <img src="https://bertysoundandvideo.com/media/posts/6/b006.jpg" alt="Mission accomplished at the arena." />
                     ca. October 2025 Mission accomplished at the arena.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/6/b006.jpg" class="type:primaryImage" alt="Mission accomplished at the arena." /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/6/b006.jpg" class="type:primaryImage" alt="Mission accomplished at the arena." /></p>
                 <p><em>ca. October 2025</em></p><p>Mission accomplished at the arena.</p>
             ]]>
         </content>
@@ -175,20 +175,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/dad.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/dad.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/34/b034.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/dad.html"/>
+        <id>https://bertysoundandvideo.com/dad.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/34/b034.jpg" medium="image" />
 
         <updated>2025-06-06T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/34/b034.jpg" alt="Dad." />
+                        <img src="https://bertysoundandvideo.com/media/posts/34/b034.jpg" alt="Dad." />
                     ca. June 2025 Dad.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/34/b034.jpg" class="type:primaryImage" alt="Dad." /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/34/b034.jpg" class="type:primaryImage" alt="Dad." /></p>
                 <p><em>ca. June 2025</em></p><p>Dad.</p>
             ]]>
         </content>
@@ -198,20 +198,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/todays-office.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/todays-office.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/18/b018.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/todays-office.html"/>
+        <id>https://bertysoundandvideo.com/todays-office.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/18/b018.jpg" medium="image" />
 
         <updated>2025-03-15T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/18/b018.jpg" alt="Today&#x27;s office." />
+                        <img src="https://bertysoundandvideo.com/media/posts/18/b018.jpg" alt="Today&#x27;s office." />
                     ca. March 2025 Today’s office.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/18/b018.jpg" class="type:primaryImage" alt="Today&#x27;s office." /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/18/b018.jpg" class="type:primaryImage" alt="Today&#x27;s office." /></p>
                 <p><em>ca. March 2025</em></p><p>Today’s office.</p>
             ]]>
         </content>
@@ -221,20 +221,20 @@
         <author>
             <name>Berty Rodríguez</name>
         </author>
-        <link href="https://djangelic.github.io/bertysoundandvideo/the-wedding.html"/>
-        <id>https://djangelic.github.io/bertysoundandvideo/the-wedding.html</id>
-        <media:content url="https://djangelic.github.io/bertysoundandvideo/media/posts/32/b032.jpg" medium="image" />
+        <link href="https://bertysoundandvideo.com/the-wedding.html"/>
+        <id>https://bertysoundandvideo.com/the-wedding.html</id>
+        <media:content url="https://bertysoundandvideo.com/media/posts/32/b032.jpg" medium="image" />
 
         <updated>2025-02-23T12:00:00-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://djangelic.github.io/bertysoundandvideo/media/posts/32/b032.jpg" alt="The wedding — the eighties." />
+                        <img src="https://bertysoundandvideo.com/media/posts/32/b032.jpg" alt="The wedding — the eighties." />
                     ca. February 2025 The wedding — the eighties.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://djangelic.github.io/bertysoundandvideo/media/posts/32/b032.jpg" class="type:primaryImage" alt="The wedding — the eighties." /></p>
+                    <p><img src="https://bertysoundandvideo.com/media/posts/32/b032.jpg" class="type:primaryImage" alt="The wedding — the eighties." /></p>
                 <p><em>ca. February 2025</em></p><p>The wedding — the eighties.</p>
             ]]>
         </content>
