@@ -637,29 +637,3 @@ body.scheme--dark { --muted: #b6b6bd; }
   .profile__identity { align-items: flex-start; }
   .profile__handle   { padding-left: 0; }
 }
-
-/* ── ONE FOOTER, EVERY PAGE (2026-09-24, Angel: "I want that same format for the
-   footer applied to all pages … the other pages look a bit different size wise")
-   Interior pages left the footer floating wherever the content ended, with the
-   body's black showing beneath it, and without the navy band the home page has.
-   Same treatment everywhere: the page is a column that fills the window, the
-   content takes the slack, the footer sits on the floor with the same band,
-   padding and border as the linktree. */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-body > main,
-body > .container,
-body > .linktree-page-wrapper { flex: 1 0 auto; width: 100%; }
-
-.site-footer {
-  flex: 0 0 auto;
-  margin-top: 0;
-  padding: 18px 0;
-  background: #081522;
-  border-top: 1px solid rgba(255,255,255,.08);
-}
-.site-footer__meta { font-size: 12px; }
-.site-footer__meta img { height: 20px; width: auto; display: block; }

@@ -454,21 +454,3 @@
    The wrapper kept stretching to a full viewport, and that leftover height —
    not padding, not margin — was the gap above the footer. Let it hug too. */
 .linktree-page-wrapper { min-height: 0; }
-
-/* ── FOOTER TO THE FLOOR (2026-09-24, Angel: "the footer bar needs to go to the
-   bottom of the page automatically so the black portion on the bottom is gone")
-   The page is shorter than the viewport, so everything below the footer was the
-   BODY showing through — body background is #000 from the dark scheme, while the
-   linktree paints its own navy. Make the page a column that fills the viewport and
-   let the navy wrapper take the slack, so the footer lands on the floor with the
-   page colour above it. Scoped with :has so interior pages keep their own layout. */
-body:has(.linktree-page-wrapper) {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-body:has(.linktree-page-wrapper) .linktree-page-wrapper { flex: 1 0 auto; }
-body:has(.linktree-page-wrapper) .site-footer { flex: 0 0 auto; margin-top: 0; }
-
-/* The attribution mark: brandmark, not wordmark (Angel, 2026-09-24). */
-.site-footer__meta img { height: 20px; width: auto; display: block; }
